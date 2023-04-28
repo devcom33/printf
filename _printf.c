@@ -6,11 +6,10 @@
 int _printf(const char *format, ...)
 {
 	va_list arguments;
+	int cnt = 0;
 
 	va_start(arguments, format);
-
-	int cnt = SelectFunc(format, arguments);
-
+	cnt = SelectFunc(format, arguments);
 	va_end(arguments);
 	return (cnt);
 }
