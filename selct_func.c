@@ -15,7 +15,7 @@ int SelectFunc(const char *format, va_list args)
 	};
 	int cnt = 0, i;
 
-	if (*format == 0)
+	if (format == NULL)
 	{
 		return (-1);
 	}
