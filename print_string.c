@@ -2,6 +2,7 @@
 /**
  * PrintString - function that print a string %s
  * @list: list arguments
+ * Return: count of char
  */
 int PrintString(va_list list)
 {
