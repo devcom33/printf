@@ -5,7 +5,7 @@
  */
 int PrintChar(va_list args)
 {
-	char c = va_arg(args, char);
+	char c = va_arg(args, int);
 
 	if (!c)
 	{
