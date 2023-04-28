@@ -32,6 +32,10 @@ int SelectFunc(const char *format, va_list args)
 					break;
 				}
 			}
+			if (list_frmat[i].frm == NULL)
+			{
+				return (-1);
+			}
 		}
 		else
 		{
