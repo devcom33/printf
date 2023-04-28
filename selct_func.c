@@ -1,6 +1,8 @@
 #include "main.h"
 /**
  * SelectFunc - selection function by the format
+ * @format: format argument a char
+ * @args: arguments on the type va_list
  * Return: number of characters
  */
 int SelectFunc(const char *format, va_list args)
@@ -32,7 +34,7 @@ int SelectFunc(const char *format, va_list args)
 			_putchar(*format);
 			cnt++;
 		}
-		format++;	
+		format++;
 	}
 	return (cnt);
 }
