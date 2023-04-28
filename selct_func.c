@@ -15,6 +15,10 @@ int SelectFunc(const char *format, va_list args)
 	};
 	int cnt = 0, i;
 
+	if (*format == 0)
+	{
+		return (-1);
+	}
 	while (*format)
 	{
 		if (*format == '%')
