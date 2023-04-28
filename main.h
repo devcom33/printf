@@ -1,9 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
-#include <stdlib.h> /* malloc */
+#include <stdlib.h>
 #include <stdarg.h>
 /**
- * struct formattype - 
+ * struct formattype - name of the structure
  * @frm: pointer argument with type of char
  * @func: pointer function
  */
