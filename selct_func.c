@@ -32,7 +32,7 @@ int SelectFunc(const char *format, va_list args)
 					break;
 				}
 			}
-			if (list_frmat[i].frm == NULL)
+			if (list_frmat[i].frm == NULL || list_frmat[i].frm == ' ')
 			{
 				return (-1);
 			}
