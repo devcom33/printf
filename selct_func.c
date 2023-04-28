@@ -28,15 +28,17 @@ int SelectFunc(const char *format, va_list args)
 					break;
 				}
 			}
-			if (list_frmat[i].frm == NULL && (*format) == ' ')
+			if (list_frmat[i].frm == NULL)
 			{
-				return (-1);
-			}
-			else if (list_frmat[i].frm == NULL && (*format) != 0)
-			{
-				_putchar(*(--format));
-				_putchar(*format);
-				cnt += 2;
+				if ((*format) == ' ')
+				{
+					return (-1);
+				}
+				else if ((*format) != 0)
+				{
+					_putchar(*format);
+					cnt += 1;
+				}
 			}
 		}
 		else
