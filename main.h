@@ -2,6 +2,7 @@
 #define MAIN_H
 #include <stdlib.h>
 #include <stdarg.h>
+#include <unistd.h>
 /**
  * struct formattype - name of the structure
  * @frm: pointer argument with type of char
