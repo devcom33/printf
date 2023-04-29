@@ -4,7 +4,7 @@
  * @args: args argument
  * Return: number of characters
  */
-int PrintPercent(va_list args)
+int PrintPercent(__attribute__((unused)) va_list args)
 {
 	_putchar('%');
 	return (1);
