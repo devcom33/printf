@@ -36,7 +36,7 @@ int SelectFunc(const char *format, va_list args)
 				}
 				else if ((*format) != 0)
 				{
-					_putchar('%');
+					_putchar(*(format - 1));
 					_putchar(*format);
 					cnt += 1;
 				}
