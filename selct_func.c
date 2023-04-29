@@ -30,7 +30,7 @@ int SelectFunc(const char *format, va_list args)
 			}
 			if (list_frmat[i].frm == NULL)
 			{
-				if ((*format) == ' ')
+				if ((*format) == ' ' || (*format) == 0)
 				{
 					return (-1);
 				}
