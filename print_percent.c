@@ -8,5 +8,4 @@ int PrintPercent(__attribute__((unused)) va_list args)
 {
 	_putchar('%');
 	return (1);
-	(void)args;
 }
