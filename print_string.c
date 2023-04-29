@@ -9,6 +9,10 @@ int PrintString(va_list list)
 	int cnt = 0;
 	char *str = va_arg(list, char*);
 
+	if (str == NULL)
+	{
+		return (0);
+	}
 	while (*str)
 	{
 		_putchar(*str);
