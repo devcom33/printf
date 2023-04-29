@@ -11,7 +11,7 @@ int PrintString(va_list list)
 
 	if (str == NULL)
 	{
-		return (0);
+		str = NULL;
 	}
 	while (*str)
 	{
