@@ -18,5 +18,7 @@ int _putchar(char c);
 int PrintPercent(va_list args);
 int PrintChar(va_list args);
 int PrintString(va_list args);
+int PrintDigi(va_list args);
+int PrintUndi(va_list args);
 int _printf(const char *format, ...);
 #endif
