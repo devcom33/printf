@@ -38,7 +38,7 @@ int SelectFunc(const char *format, va_list args)
 				{
 					_putchar(*(format - 1));
 					_putchar(*format);
-					cnt += 1;
+					cnt += 2;
 				}
 			}
 		}
