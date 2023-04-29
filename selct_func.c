@@ -28,7 +28,7 @@ int SelectFunc(const char *format, va_list args)
 			}
 			if (list_frmat[i].frm == NULL)
 			{
-				if ((*format) == ' ' || (*format) == 0 || (*format) == '')
+				if ((*format) == ' ' || (*format) == 0 || (*format) == 0)
 					return (-1);
 				else if ((*format) != 0)
 				{
