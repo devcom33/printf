@@ -12,9 +12,7 @@ int SelectFunc(const char *format, va_list args)
 	int cnt = 0, i;
 
 	if (format == NULL)
-	{
 		return (-1);
-	}
 	while (*format)
 	{
 		if (*format == '%')
@@ -31,9 +29,7 @@ int SelectFunc(const char *format, va_list args)
 			if (list_frmat[i].frm == NULL)
 			{
 				if ((*format) == ' ' || (*format) == 0)
-				{
 					return (-1);
-				}
 				else if ((*format) != 0)
 				{
 					_putchar(*(format - 1));
