@@ -29,7 +29,7 @@ int PrintDigi(va_list args)
 	while (dec >= 1)
 	{
 		cnt += _putchar(((num / dec) % 10) + '0');
-		dec /= 0;
+		dec /= 10;
 	}
 	return (cnt);
 }
