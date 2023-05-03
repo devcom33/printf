@@ -8,7 +8,7 @@
 int SelectFunc(const char *format, va_list args)
 {
 	formattype list_frmat[] = {{"%", PrintPercent}, {"c", PrintChar},
-		{"s", PrintString}, {"NULL", NULL}};
+		{"s", PrintString}, {"d", PrintDigi}, {"i", PrintDigi}, {"NULL", NULL}};
 	int cnt = 0, i;
 
 	if (format == NULL)
@@ -28,7 +28,7 @@ int SelectFunc(const char *format, va_list args)
 			}
 			if (list_frmat[i].frm == NULL)
 			{
-				if ((*format) == ' ' || (*format) == 0 || (*format) == 0)
+				if ((*format) == ' ' || (*format) == 0)
 					return (-1);
 				else if ((*format) != 0)
 				{
