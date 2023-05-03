@@ -8,8 +8,8 @@ int PrintDigi(va_list args)
 {
 	int cnt = 0;
 	int dec = 1;
-	int num = va_arg(args, int);
-	int sd = 0;
+	long int num = va_arg(args, int);
+	long int sd = 0;
 
 	if (num < 0)
 	{
