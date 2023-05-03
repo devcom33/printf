@@ -18,7 +18,7 @@ int PrintDigi(va_list args)
 	}
 	if (num < 10)
 	{
-		return (cnt += _putchar(digit + '0'));
+		return (cnt += _putchar(num + '0'));
 	}
 	sd = num;
 	while (sd > 9)
