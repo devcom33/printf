@@ -11,7 +11,7 @@ int PrintDigi(va_list args)
 	int num = va_arg(args, int);
 	int sd = 0;
 
-	if (dec < 0)
+	if (num < 0)
 	{
 		cnt = cnt + _putchar('-');
 		num *= -1;
@@ -24,6 +24,7 @@ int PrintDigi(va_list args)
 	while (sd > 9)
 	{
 		dec *= 10;
+		sd /= 9;
 	}
 	while (dec >= 1)
 	{
